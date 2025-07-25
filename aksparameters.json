@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+    "clusterName": {
+      "value": "aks101cluster"
+    },
+    "location": {
+      "value": "[resourceGroup().location]"
+    },
+    "dnsPrefix": {
+      "value": "aks101dns"
+    },
+    "osDiskSizeGB": {
+      "value": 10
+    },
+    "agentCount": {
+      "value": 3
+    },
+    "agentVMSize": {
+      "value": "standard_d2s_v3"
+    },
+    "linuxAdminUsername": {
+      "value": "azureuser"
+    },
+    "sshRSAPublicKey": {
+      "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDC6T2d2zkZSRdcXkhl+KUEb5iov4ody84SOF6BLqTGWsM5xz00fu50BU80Gb3P9pKBWsNMtIC3ChHG1glhz9+/deg3gzYynZ6gtizpqKiJTZbh5EvBaomeKOJk/F0SyUZPi6I5bG5tb8FeYdS8HcqduQ0Z1+IPHBXdXWQuSsZhOZCzaeNemzJZPFUlwUJXlmkeBgEdF87UaSZj5Q8HJ7C/jmTOZ6CB6yltgLxSO4I+V/5ZDBfm0cAv/jbHdICwwesApsUkkre3Hfa+NRgtkK4yaeHV3X47krhvYr79ek54EDwPgxcHAdXf2gWETOiD7iEUY5nAxma8TdDXKUmRtPLgsmnXX+ZKgwq9cR6YSBQzhiErLe3bW/tLtHU7yLmvQxS0BExXhimwVtKokdb6vobAGnAZAhgjoPXOyMgcUWdw5UgCwjBpy4vfVO9cDtxh5T8A+vMkV0YVfPA9N7K61MnI2tQjDyTVNY7nkLMbj70MoOWW3dAsJVQ1F9cJZwCZq5U= generated-by-azure"
+    }
+}
